@@ -27,32 +27,32 @@ body {
 
 /* Body Classes for rain, clear, snow and storm weather */
 .rain {
-    background-image: url(/www/img/rain.jpg);
+    background-image: url(../img/rain.jpg);
 }
 
 .sunny {
-    background-image: url(/www/img/sun-dog.jpg);
+    background-image: url(../img/sun-dog.jpg);
 }
 
 .clouds {
-    background-image: url(./img/nublado.jpg);
+    background-image: url(../img/nublado.jpg);
 }
 
 .rain-dog {
     /* I dont know why the hell im doing this... */
-    background-image: url(/www/img/rain-dog.jpg);
+    background-image: url(../img/rain-dog.jpg);
 }
 
 .snow {
-    background-image: url(/www/img/snow.jpg);
+    background-image: url(../img/snow.jpg);
 }
 
 .thunder {
-    background-image: url(/www/img/thunder.jpg);
+    background-image: url(../img/thunder.jpg);
 }
 
 .default {
-    background-image: url(/www/img/default.jpg);
+    background-image: url(../img/default.jpg);
 }
 
 /* Header */
