@@ -35,7 +35,7 @@ body {
 }
 
 .clouds {
-    background-image: url(/www/img/nublado.jpg);
+    background-image: url(./img/nublado.jpg);
 }
 
 .rain-dog {
