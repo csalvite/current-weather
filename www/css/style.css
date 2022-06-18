@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de pantalla, color y estilo de letra */
+body {
+    /* #4A91FF #47BFDF */
+    min-height: 100vh;
+    background: linear-gradient(30deg, rgb(74, 145, 255), rgb(71, 191, 223));
+    /* background-image: url(https://source.unsplash.com/random?weather); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Body Classes for rain, clear, snow and storm weather */
+.rain {
+    background-image: url(/www/img/rain.jpg);
+}
+
+.sunny {
+    background-image: url(/www/img/sun-dog.jpg);
+}
+
+.clouds {
+    background-image: url(/www/img/nublado.jpg);
+}
+
+.rain-dog {
+    /* I dont know why the hell im doing this... */
+    background-image: url(/www/img/rain-dog.jpg);
+}
+
+.snow {
+    background-image: url(/www/img/snow.jpg);
+}
+
+.thunder {
+    background-image: url(/www/img/thunder.jpg);
+}
+
+.default {
+    background-image: url(/www/img/default.jpg);
+}
+
+/* Header */
+header {
+    padding: 3rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* MAIN */
+main {
+    margin: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 90vw;
+}
+
+main section#icon-weather {
+    padding: 2rem;
+    text-align: center;
+}
+
+main section#icon-weather i {
+    font-size: 7rem;
+}
+
+/* main -> section info */
+main section#weather-info {
+    background-color: rgba(255, 255, 255, 0.295);
+    border: 1px solid white;
+    padding: 2rem;
+    border-radius: 25px;
+    min-height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section#weather-info h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+main section#weather-info h3 {
+    font-size: 5rem;
+}
+
+main section#weather-info h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+main section#weather-info div.wind-hum {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    gap: 1.2rem; */
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+main section#weather-info div.wind-hum i {
+    font-size: 1.5rem;
+}
+
+main section#weather-info div.wind-hum div {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 10% 25% 1px 25%;
+    gap: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 700px) {
+    main {
+        max-width: 50vw;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        max-width: 50vw;
+    }
+
+    main section#weather-info div.wind-hum {
+        font-size: 1.2rem;
+    }
+}
