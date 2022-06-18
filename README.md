@@ -6,6 +6,6 @@ The data has been managed from the OpenWeatherMap api and the style of the page 
 
 # how to use
 
-1- Create a config.js file at /www/js/
-2- Add your apiKey on a variable and export it to src.js file
-3- Enjoy :)
+1. Create a config.js file at /www/js/
+2. Add your apiKey on a variable and export it to src.js file
+3. Enjoy :)
